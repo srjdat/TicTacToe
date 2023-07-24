@@ -36,9 +36,11 @@ public class MainFrame extends JFrame {
 		});
 	}
 
-	//this honestly took me way too long to figure out and i don't wanna talk about it
-	
+	public void playerTurn() {
 
+	}
+
+	//this honestly took me way too long to figure out and i don't wanna talk about it
 	public void checking() {
 		//check for winner
 		if(count > 3 && count < 8) {
@@ -117,7 +119,6 @@ public class MainFrame extends JFrame {
 			game = false; 
 		}
 		
-		count++; 
 		System.out.println(count);
 	}
 	
@@ -164,9 +165,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[0][0] = "X";
 						topLeftBtn.setText("X");
+						count++; 
 					} else {
 						board[0][0] = "O";
 						topLeftBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -187,9 +190,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[0][1] = "X";
 						topMiddleBtn.setText("X");
+						count++; 
 					} else {
 						board[0][1] = "O";
 						topMiddleBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -210,9 +215,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[0][2] = "X";
 						topRightBtn.setText("X");
+						count++; 
 					} else {
 						board[0][2] = "O";
 						topRightBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -233,9 +240,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[1][0] = "X";
 						middleLeftBtn.setText("X");
+						count++; 
 					} else {
 						board[1][0] = "O";
 						middleLeftBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -256,9 +265,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[1][1] = "X";
 						middleMiddleBtn.setText("X");
+						count++; 
 					} else {
 						board[1][1] = "O";
 						middleMiddleBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -279,9 +290,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[1][2] = "X";
 						middleRightBtn.setText("X");
+						count++; 
 					} else {
 						board[1][2] = "O";
 						middleRightBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -302,9 +315,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[2][0] = "X";
 						bottomLeftBtn.setText("X");
+						count++; 
 					} else {
 						board[2][0] = "O";
 						bottomLeftBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -325,9 +340,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[2][1] = "X";
 						bottomMiddleBtn.setText("X");
+						count++; 
 					} else {
 						board[2][1] = "O";
 						bottomMiddleBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
@@ -348,9 +365,11 @@ public class MainFrame extends JFrame {
 					if(count % 2 == 0) {
 						board[2][2] = "X";
 						bottomRightBtn.setText("X");
+						count++; 
 					} else {
 						board[2][2] = "O";
 						bottomRightBtn.setText("O");
+						count++; 
 					}
 					
 					checking();
